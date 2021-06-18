@@ -9,7 +9,7 @@ import (
 	"path"
 	"sort"
 	"strings"
-	"syscall"
+	//"syscall"
 
 	"github.com/CalebQ42/squashfs/internal/compression"
 	"github.com/CalebQ42/squashfs/internal/inode"
@@ -137,11 +137,13 @@ func (w *Writer) AddFileTo(filepath string, file *os.File) error {
 	holder.folder = stat.IsDir()
 	holder.symlink = (stat.Mode()&os.ModeSymlink == os.ModeSymlink)
 	holder.perm = int(stat.Mode().Perm())
+	/*
 	//Thanks to https://stackoverflow.com/questions/58179647/getting-uid-and-gid-of-a-file for uid and guid getting
 	if stat, ok := stat.Sys().(*syscall.Stat_t); ok {
 		holder.UID = int(stat.Uid)
 		holder.GUID = int(stat.Gid)
 	}
+	*/
 	if sort.SearchInts(w.uidGUIDTable, holder.UID) == len(w.uidGUIDTable) {
 		w.uidGUIDTable = append(w.uidGUIDTable, holder.UID)
 		sort.Ints(w.uidGUIDTable)
