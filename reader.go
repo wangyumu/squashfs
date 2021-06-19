@@ -7,8 +7,8 @@ import (
 	"math"
 	"time"
 
-	"github.com/CalebQ42/squashfs/internal/compression"
-	"github.com/CalebQ42/squashfs/internal/inode"
+	"github.com/wangyumu/squashfs/internal/compression"
+	"github.com/wangyumu/squashfs/internal/inode"
 )
 
 const (
