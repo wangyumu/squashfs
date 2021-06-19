@@ -5,7 +5,7 @@ import (
 	"errors"
 	"io"
 
-	"github.com/CalebQ42/squashfs/internal/inode"
+	"github.com/wangyumu/squashfs/internal/inode"
 )
 
 //FragmentEntry is an entry in the fragment table
