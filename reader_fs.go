@@ -9,7 +9,7 @@ import (
 	"path"
 	"strings"
 
-	"github.com/CalebQ42/squashfs/internal/directory"
+	"github.com/wangyumu/squashfs/internal/directory"
 )
 
 //FS is a fs.FS representation of a squashfs directory.
