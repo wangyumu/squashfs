@@ -10,8 +10,8 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/CalebQ42/squashfs/internal/directory"
-	"github.com/CalebQ42/squashfs/internal/inode"
+	"github.com/wangyumu/squashfs/internal/directory"
+	"github.com/wangyumu/squashfs/internal/inode"
 )
 
 //File represents a file inside a squashfs archive.
