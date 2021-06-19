@@ -4,7 +4,7 @@ import (
 	"encoding/binary"
 	"io"
 
-	"github.com/CalebQ42/squashfs/internal/inode"
+	"github.com/wangyumu/squashfs/internal/inode"
 )
 
 func (w *Writer) countInodes() (out uint32) {
