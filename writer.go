@@ -11,8 +11,8 @@ import (
 	"strings"
 	//"syscall"
 
-	"github.com/CalebQ42/squashfs/internal/compression"
-	"github.com/CalebQ42/squashfs/internal/inode"
+	"github.com/wangyumu/squashfs/internal/compression"
+	"github.com/wangyumu/squashfs/internal/inode"
 )
 
 //Writer is used to creaste squashfs archives. Currently unusable.
